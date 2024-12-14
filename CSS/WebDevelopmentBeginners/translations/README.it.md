@@ -1,25 +1,31 @@
-# Costruire una estensione del browser
+# Costruire un Gioco Spaziale
 
-La creazione di estensioni del browser è un modo divertente e interessante per pensare alle prestazioni della propia app mentre si crea un diverso tipo di risorsa web. Questo form include lezioni su come funzionano i browser e su come distribuire un'estensione del browser, come creare un form, chiamare un'API e utilizzare l'archiviazione locale (local storage) e come valutare le prestazioni del proprio sito web e migliorarlo.
+Un gioco spaziale per insegnare  fondamenti di JavaScript più avanzati
 
-Verrà creata un'estensione del browser che funziona su Edge, Chrome e Firefox. Questa estensione, che è come un mini sito web su misura per un'attività molto specifica, controlla l' [API delle segnalazioni di C02](https://www.co2signal.com) per l'utilizzo di elettricità e l'intensità di carbonio di una determinata regione e restituisce una lettura sull'impronta di carbonio della regione.
+In questa lezione si imparerà come costruire un gioco spaziale. Se mai si è giocato a "Space Invaders", questo gioco ha la stessa idea: guidare un'astronave e sparare sui mostri che scendono dall'alto. Ecco come apparirà il gioco finito:
 
-Questa estensione può essere chiamata ad hoc da un utente una volta che una chiave API e un codice regionale vengono inseriti in un form per determinare l'utilizzo locale dell'elettricità e quindi offrire dati che possono influenzare le decisioni sull'elettricità di un utente. Ad esempio, potrebbe essere preferibile ritardare il funzionamento di un'asciugatrice (un'attività ad alta intensità di carbonio) durante un periodo di elevato consumo di elettricità nella propria regione.
+![Gioco completato](../images/pewpew.gif)
 
-### Argomenti
+In queste sei lezioni si imparerà quanto segue:
 
-1. [Informazioni sul browser](../1-about-browsers/translations/README.it.md)
-2. [Form e archiviazione locale](../2-forms-browsers-local-storage/translations/README.it.md)
-3. [Attività in background e prestazioni](../3-background-tasks-and-performance/translations/README.it.md)
+- **Interagire** con l'elemento Canvas per disegnare oggetti su uno schermo
+- **Comprendere** il sistema di coordinate cartesiane
+- **Imparare** il modello Pub-Sub per creare una solida architettura di gioco più facile da mantenere ed estendere
+- **Sfruttare** Async/Await per caricare le risorse di gioco
+- **Gestire** gli eventi da tastiera
 
-![un'estensione del browser verde](../extension-screenshot.png)
+## Panoramica
+
+- Teoria
+   - [Introduzione alla creazione di giochi con JavaScript](1-introduction/translations/README.it.md)
+- Esercitazione
+   - [Disegnare sull'elemento canvas](2-drawing-to-canvas/translations/README.it.md)
+   - [Spostamento di elementi sullo schermo](3-moving-elements-around/translations/README.it.md)
+   - [Rilevamento della collisione.](4-collision-detection/translations/README.it.md)
+   - [Tenere il punteggio](5-keeping-score/translations/README.it.md)
+   - [Terminare e riavviare il gioco](6-end-condition/translations/README.it.md)
 
 ## Crediti
 
-L'idea per questa app è stata offerta da Asim Hussain, responsabile di Microsoft del team Green Cloud Advocacy e autore dei [Principi verdi](https://principles.green/). In origine era un [progetto di sito web](https://github.com/jlooper/green).
-
-La struttura dell'estensione del browser è stata influenzata dall ['estensione COVID di Adebola Adeniran](https://github.com/onedebos/covtension).
-
-Il concetto alla base del sistema di icone "punto" è stato suggerito dalla struttura dell'icona dell'estensione del browser [Energy Lollipop](https://energylollipop.com/) per le emissioni della California.
-
-Queste lezioni sono state scritte con il ♥ ️ da [Jen Looper](https://www.twitter.com/jenlooper)
+Le risorse utilizzate provengono da https://www.kenney.nl/.
+Se interessa costruire giochi, queste sono alcune risorse davvero buone, molte sono gratuite e alcune sono a pagamento.

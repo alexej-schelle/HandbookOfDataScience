@@ -1,28 +1,31 @@
-# Création d'une extension de navigateur
+# Construisez un jeu spatial (Space Game)
 
-La création d'extensions de navigateur est une façon amusante et intéressante de réfléchir aux performances de vos applications tout en créant un type différent d'élément Web. Ce module comprend des leçons sur le fonctionnement des navigateurs et le déploiement d'une extension de navigateur, la création d'un formulaire, l'appel d'une API et l'utilisation du stockage local, ainsi que la manière d'évaluer les performances de votre site Web et de les améliorer.
+Un jeu spatial pour enseigner les principes fondamentaux plus avancés de JavaScript
 
-Vous allez créer une extension de navigateur qui fonctionne sur Edge, Chrome et Firefox. Cette extension, qui ressemble à un mini site Web adapté à une tâche très spécifique, vérifie [l'API C02 Signal](https://www.co2signal.com) pour la consommation d'électricité et l'intensité carbone d'une région donnée, et renvoie une lecture sur l'empreinte carbone de la région.
+Dans cette leçon, vous apprendrez à créer votre propre jeu spatial. Si vous avez déjà joué au jeu "Space Invaders", ce jeu a la même idée : diriger un vaisseau spatial et tirer sur des monstres qui descendent d'en haut. Voici à quoi ressemblera le jeu terminé :
 
-Cette extension peut être appelée ad hoc par un utilisateur une fois qu'une clé API et qu'un code de région sont entrés dans un formulaire pour déterminer la consommation d'électricité locale et ainsi offrir des données qui peuvent influencer les décisions d'un utilisateur en matière d'électricité. Par exemple, il peut être préférable de retarder le fonctionnement d'une sécheuse (une activité à forte intensité de carbone) pendant une période de forte consommation d'électricité dans votre région.
+![jeu achevé](images/pewpew.gif)
 
-### Sujets
+Dans ces six leçons, vous apprendrez ce qui suit :
 
-1. [À propos du navigateur](../1-about-browsers/translations/README.fr.md)
-2. [Formulaires et stockage local](../2-forms-browsers-local-storage/translations/README.fr.md)
-3. [Tâches en arrière-plan et performances](../3-background-tasks-and-performance/translations/README.fr.md)
+- **Interagir** avec l'élément Canvas pour dessiner des choses sur un écran
+- **Comprendre** le système de coordonnées cartésiennes
+- **Apprendre** le modèle Pub-Sub pour créer une architecture de jeu sonore plus facile à entretenir et à étendre
+- **Tirez parti** de Async/Attente pour charger les ressources du jeu
+- **Gérer**les événements du clavier
 
-### Crédits
+## Aperçu
 
-![une extension de navigateur verte](../extension-screenshot.png)
+- Théorie
+   - [Introduction à la création de jeux avec JavaScript](../1-introduction/translations/README.fr.md)
+- Pratique
+   - [Dessiner sur canvas](../2-drawing-to-canvas/translations/README.fr.md)
+   - [Déplacer des éléments sur l'écran](../3-moving-elements-around/translations/README.fr.md)
+   - [Détection de collision](../4-collision-detection/translations/README.fr.md)
+   - [Garder le score](../5-keeping-score/translations/README.fr.md)
+   - [Terminer et redémarrer le jeu](../6-end-condition/translations/README.fr.md)
 
 ## Crédits
 
-L'idée de ce déclencheur de carbone Web a été proposée par Asim Hussain, responsable chez Microsoft de l'équipe Green Cloud Advocacy et auteur des  [Green Principles](https://principles.green/). C'était à l'origine un [projet de site web](https://github.com/jlooper/green).
-
-La structure de l'extension de navigateur a été influencée par [l'extension COVID d'Adebola Adeniran](https://github.com/onedebos/covtension).
-
-Le concept derrière le système d'icônes 'dot' a été suggéré par la structure d'icônes de l'extension de navigateur [Energy Lollipop](https://energylollipop.com/) pour les émissions Californiennes.
-
-Ces leçons ont été rédigées avec ♥️ par [Jen Looper](https://www.twitter.com/jenlooper)
-
+Les éléments utilisés pour cela provenaient de https://www.kenney.nl/. 
+Si vous aimez créer des jeux, ce sont de très bons atouts, beaucoup sont gratuits et certains sont payants. 

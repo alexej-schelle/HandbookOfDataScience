@@ -1,28 +1,31 @@
-# ブラウザ拡張機能の構築
+# スペースゲームの構築
 
-ブラウザ拡張機能を構築することは、異なるタイプの Web 資産を構築しながら、アプリのパフォーマンスについて考えることができる、楽しくて興味深い方法です。このモジュールでは、ブラウザの仕組みやブラウザ拡張機能の展開方法、フォームの構築方法、API の呼び出し方、ローカルストレージの使用方法、Web サイトのパフォーマンスを測定して改善する方法などのレッスンが含まれています。
+より高度な JavaScript の基礎を教えるスペースゲーム
 
-Edge、Chrome、Firefox で動作するブラウザ拡張機能を構築します。この拡張機能は、非常に特定のタスクに合わせたミニ Web サイトのようなもので、[C02 Signal API](https://www.co2signal.com) を使って、指定された地域の電力使用量と炭素強度をチェックし、その地域のカーボンフットプリントの読み取り値を返します。
+このレッスンでは、あなた自身のスペースゲームを作る方法を学びます。「スペースインベーダー」というゲームをプレイしたことがある方は、このゲームも同じように、宇宙船を操縦して、上から降ってくるモンスターを攻撃するというものです。完成したゲームはこんな感じです。
 
-この拡張機能は、API キーと地域コードがフォームに入力されると、ユーザーがアドホックに呼び出すことができ、地域の電力使用量を決定し、それによってユーザーの電力決定に影響を与えるデータを提供することができます。例えば、地域の電力使用量が多い時期には、衣類乾燥機の運転を遅らせることが望ましいかもしれません。
+![Finished game](../images/pewpew.gif)
 
-### トピック
+この6つのレッスンでは、次のことを学びます。
 
-1. [ブラウザのすべて](../1-about-browsers/translations/README.ja.md)
-2. [API の呼び出し、ローカルストレージの使用](../2-forms-browsers-local-storage/translations/README.ja.md)
-3. [バックグラウンドタスクとパフォーマンスについて学ぶ](../3-background-tasks-and-performance/translations/README.ja.md)
+- Canvas 要素と**相互にやりとりして**画面上に物を描く
+- 直交座標系を**理解する**
+- Pub-Sub パターンを**学び**、メンテナンスや拡張が容易なサウンドゲームアーキテクチャを作成できるようになる
+- Async/Await を**活用して**ゲームリソースをロードする
+- キーボードイベントを**処理する**
 
-### クレジット
+## 概要
 
-![a green browser extension](../extension-screenshot.png)
+- 理論
+   - [JavaScript を使ったゲーム構築入門](../1-introduction/translations/README.ja.md)
+- 実践
+   - [Canvas への描画](../2-drawing-to-canvas/translations/README.ja.md)
+   - [画面の周りの要素の移動](../3-moving-elements-around/translations/README.ja.md)
+   - [衝突の検出](../4-collision-detection/translations/README.ja.md)
+   - [スコアの保持](../5-keeping-score/translations/README.ja.md)
+   - [ゲームの終了と再起動](../6-end-condition/translations/README.ja.md)
 
 ## クレジット
 
-この Web カーボントリガーのアイデアは、Microsoft のグリーンクラウドアドボカシーチームのリーダーであり、[グリーンプリンシプル](https://principles.green/) の著者でもある Asim Hussain 氏によって提供されました。もともとは [Web サイトプロジェクト](https://github.com/jlooper/green) でした。
-
-ブラウザ拡張の構造は [Adebola Adeniran の COVID 拡張機能](https://github.com/onedebos/covtension) の影響を受けています。
-
-「ドット」アイコンシステムのコンセプトは、カリフォルニア州の排出量のためのブラウザ拡張機能 [Energy Lollipop](https://energylollipop.com/) のアイコン構造によって提案されました。
-
-These lessons were written with ♥️ by [Jen Looper](https://www.twitter.com/jenlooper)
-
+このために使用したアセットは https://www.kenney.nl/ から入手しました。
+ゲームを作るのが好きなら、これらのアセットはとても良いもので、多くは無料で、一部有料のものがあります。

@@ -1,28 +1,31 @@
-# Building a browser extension
+# Build a Space Game
 
-Building browser extensions is a fun and interesting way to think about the performance of your apps while building a different type of web asset. This module includes lessons on how browsers work and how to deploy a browser extension, how to build a form, call an API, and use local storage, and how to gauge the performance of your website and improve it.
+A space game to teach more advanced JavaScript fundamentals
 
-You'll build a  browser extension that works on Edge, Chrome, and Firefox. This extension, which is like a mini web site that is tailored to a very specific task, checks the [C02 Signal API](https://www.co2signal.com) for a given region's electricity usage and carbon intensity, and returns a reading on the region's carbon footprint.
+In this lesson you will learn how to build your own space game. If you've ever played the game "Space Invaders", this game has the same idea: to steer a spaceship and fire on monsters that come down from above. Here's what the finished game will look like:
 
-This extension can be called ad hoc by a user once an API key and region code is input into a form to determine local electricity usage and thereby offer data that can influence a user's electricity decisions. For example, it may be preferable to delay running a clothes dryer (a carbon-intense activity) during a period of high electricity usage in your region.
+![Finished game](images/pewpew.gif)
 
-### Topics
+In these six lessons you will learn the following:
 
-1. [About the browser](1-about-browsers/README.md)
-2. [Forms and local storage](2-forms-browsers-local-storage/README.md)
-3. [Background tasks and performance](3-background-tasks-and-performance/README.md)
+- **Interact** with the Canvas element to draw things on a screen
+- **Understand** the cartesian coordinate system
+- **Learn** the Pub-Sub pattern to create sound game architecture that's easier to maintain and extend
+- **Leverage** Async/Await to load game resources
+- **Handle** keyboard events
 
-### Credits
+## Overview
 
-![a green browser extension](extension-screenshot.png)
+- Theory
+   - [Introduction to building games with JavaScript](1-introduction/README.md)
+- Practice
+   - [Drawing to canvas](2-drawing-to-canvas/README.md)
+   - [Moving elements around the screen](3-moving-elements-around/README.md)
+   - [Collision detection](4-collision-detection/README.md)
+   - [Keeping score](5-keeping-score/README.md)
+   - [Ending and restarting the game](6-end-condition/README.md)
 
 ## Credits
 
-The idea for this web carbon trigger was offered by Asim Hussain, lead at Microsoft of the Green Cloud Advocacy team and author of the [Green Principles](https://principles.green/). It was originally a [web site project](https://github.com/jlooper/green).
-
-The structure of the browser extension was influenced by [Adebola Adeniran's COVID extension](https://github.com/onedebos/covtension).
-
-The concept behind the 'dot' icon system was suggested by the icon structure of the [Energy Lollipop](https://energylollipop.com/) browser extension for California emissions.
-
-These lessons were written with ♥️ by [Jen Looper](https://www.twitter.com/jenlooper)
-
+The assets used for this came from https://www.kenney.nl/. 
+If you are into building games, these are some seriously good assets, a lot is free and some are paid. 

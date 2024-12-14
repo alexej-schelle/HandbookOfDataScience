@@ -1,28 +1,31 @@
-# Een browserextensie bouwen
+# Bouw een Ruimtegame
 
-Het bouwen van browserextensies is een leuke en interessante manier om na te denken over de prestaties van uw apps terwijl u een ander type webitem bouwt. Deze module bevat lessen over hoe browsers werken en hoe u een browserextensie implementeert, hoe u een formulier bouwt, een API aanroept en lokale opslag gebruikt, en hoe u de prestaties van uw website peilt en deze verbetert.
+Een ruimtegame om meer geavanceerde JavaScript-basisprincipes te leren
 
-U bouwt een browserextensie die werkt op Edge, Chrome en Firefox. Deze extensie, die lijkt op een mini-website die is afgestemd op een zeer specifieke taak, controleert de [C02 Signal API](https://www.co2signal.com) voor het elektriciteitsverbruik en de koolstofintensiteit van een bepaalde regio en geeft een lezing over de ecologische voetafdruk van de regio.
+In deze les leert u hoe u uw eigen ruimtegame kunt bouwen. Als u ooit het spel "Space Invaders" hebt gespeeld, heeft dit spel hetzelfde idee: een ruimteschip besturen en schieten op monsters die van boven naar beneden komen. Hier is hoe het voltooide spel eruit zal zien:
 
-Deze extensie kan door een gebruiker ad-hoc worden genoemd zodra een API-sleutel en regiocode in een formulier zijn ingevoerd om het lokale elektriciteitsverbruik te bepalen en daardoor gegevens te bieden die de elektriciteitsbeslissingen van een gebruiker kunnen beïnvloeden. Het kan bijvoorbeeld de voorkeur hebben om het gebruik van een wasdroger (een koolstofintensieve activiteit) uit te stellen tijdens een periode van hoog elektriciteitsverbruik in uw regio.
+![Voltooid spel](../images/pewpew.gif)
 
-### Onderwerpen
+In deze zes lessen leert u het volgende:
 
-1. [Over de browser](../1-about-browsers/translations/README.nl.md)
-2. [Formulieren en lokale opslag](../2-forms-browsers-local-storage/translations/README.nl.md)
-3. [Achtergrondtaken en prestaties](../3-background-tasks-and-performance/translations/README.nl.md)
+- **Werk** met het Canvas-element om dingen op een scherm te tekenen
+- **Begrijp** het cartesische coördinatensysteem
+- **Leer** het Pub-Sub-patroon om een degelijke game-architectuur te creëren die gemakkelijker te onderhouden en uit te breiden is
+- **Maak gebruik van** Async/Await om gamebronnen te laden
+- **Behandel** toetsenbordgebeurtenissen
 
-### Credits
+## Overzicht
 
-![een groene browserextensie](../extension-screenshot.png)
+- Theorie
+   - [Inleiding tot het bouwen van spellen met JavaScript](../1-introduction/translations/README.md)
+- Praktijk
+   - [Tekenen op canvas](../2-drawing-to-canvas/translations/README.md)
+   - [Elementen over het scherm laten bewegen](../3-moving-elements-around/translations/README.md)
+   - [Botsingsdetectie](../4-collision-detection/translations/README.md)
+   - [Score bijhouden](../5-keeping-score/translations/README.md)
+   - [Het spel beëindigen en opnieuw starten](../6-end-condition/translations/README.md)
 
 ## Credits
 
-Het idee voor deze web-koolstoftrigger werd aangedragen door Asim Hussain, hoofd bij Microsoft van het Green Cloud Advocacy-team en auteur van de [Green Principles](https://principles.green/). Het was oorspronkelijk een [websiteproject](https://github.com/jlooper/green).
-
-De structuur van de browserextensie werd beïnvloed door [de COVID-extensie van Adebola Adeniran](https://github.com/onedebos/covtension).
-
-Het concept achter het 'punt'-pictogramsysteem werd gesuggereerd door de pictogramstructuur van de [Energy Lollipop](https://energylollipop.com/) browserextensie voor Californische emissies.
-
-Deze lessen zijn geschreven met ♥ door [Jen Looper](https://www.twitter.com/jenlooper)
-
+De middelen die hiervoor zijn gebruikt, waren afkomstig van https://www.kenney.nl/.
+Als u van het bouwen van games houdt, zijn dit enkele zeer goede activa, veel is gratis en sommige worden betaald.

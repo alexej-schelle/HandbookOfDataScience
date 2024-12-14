@@ -1,28 +1,26 @@
-# Construyendo una extensión de navegador
+# Construye un juego espacial
 
-Crear extensiones de navegador es una forma divertida e interesante de pensar en el rendimiento de sus aplicaciones mientras crea un tipo diferente de activo web. Este módulo incluye lecciones sobre cómo funcionan los navegadores y cómo implementar una extensión de navegador, cómo crear un formulario, llamar a una API y usar el almacenamiento local, y cómo medir el rendimiento de su sitio web y mejorarlo.
+Un juego espacial para enseñar los fundamentos de JavaScript más avanzados
 
-Construirá una extensión de navegador que funcione en Edge, Chrome y Firefox. Esta extensión, que es como un mini sitio web que está diseñado para una tarea muy específica, verifica la [API de señal C02](https://www.co2signal.com) para el uso de electricidad y la intensidad de carbono de una región determinada, y devuelve un lectura sobre la huella de carbono de la región.
+En esta lección aprenderás a construir tu propio juego espacial. Si alguna vez has jugado al juego "Space Invaders", este juego tiene la misma idea: dirigir una nave espacial y disparar a los monstruos que vienen desde arriba. Así es como se verá el juego terminado:
 
-Esta extensión puede ser llamada ad hoc por un usuario una vez que se ingresa una clave API y un código de región en un formulario para determinar el uso de electricidad local y, por lo tanto, ofrecer datos que pueden influir en las decisiones de electricidad de un usuario. Por ejemplo, puede ser preferible retrasar el funcionamiento de una secadora de ropa (una actividad intensa en carbono) durante un período de alto consumo de electricidad en su región.
+![Finished game](../images/pewpew.gif)
 
-### Temas
+En estas seis lecciones aprenderá lo siguiente:
 
-1. [Sobre el navegador](about-browsers/README.md)
-2. [Formularios y almacenamiento local](forms-browsers-local-storage/README.md)
-3. [Desempeño y tareas en segundo plano](background-tasks-and-performance/README.md)
+- **Interactuar** con el elemento Canvas para dibujar cosas en una pantalla
+- **Comprender** el sistema de coordenadas cartesiano
+- **Aprenda** el patrón Pub-Sub para crear una arquitectura de juegos de sonido que sea más fácil de mantener y ampliar
+- **Aprovecha** Async / Await para cargar recursos del juego
+- **Manejar** eventos de teclado
 
-### Créditos
+## Visión de conjunto
 
-![a green browser extension](../extension-screenshot.png)
-
-## Créditos
-
-La idea de este disparador de carbono web fue ofrecida por Asim Hussain, líder en Microsoft del equipo de defensa de la nube verde y autor de los [Principios verdes](https://principles.green/). Originalmente era un [proyecto de sitio web](https://github.com/jlooper/green).
-
-La estructura de la extensión del navegador fue influenciada por la [extensión COVID de Adebola Adeniran](https://github.com/onedebos/covtension).
-
-El concepto detrás del sistema de iconos 'puntos' fue sugerido por la estructura de iconos de la extensión del navegador [Energy Lollipop](https://energylollipop.com/) para las emisiones de California.
-
-Estas lecciones fueron escritas con ♥ ️ por [Jen Looper](https://www.twitter.com/jenlooper)
-
+- teoría
+   - [Introducción a la creación de juegos con JavaScript](introduction/README.md)
+- practica
+   - [Dibujo a lienzo](drawing-to-canvas/README.md)
+   - [Mover elementos por la pantalla](moving-elements-around/README.md)
+   - [Detección de colisiones](collision-detection/README.md)
+   - [Manteniendo la puntuación](keeping-score/README.md)
+   - [Finalizar y reiniciar el juego](end-condition/README.md)

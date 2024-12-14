@@ -1,29 +1,13 @@
 {
-	"name": "carbon-trigger-extension",
+	"name": "space-invaders",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
-		"engines": {
-		"npm": ">=9.0.0",
-		"node": ">=18.0.0"
-	},
+	"main": "app.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"watch": "webpack --watch",
-		"build": "webpack"
+		"start": "npx http-server -c-1 -p 5000",
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"keywords": [
-		"chrome extension",
-		"edge extension",
-		"carbon usage tracker"
-	],
-	"author": "Microsoft Cloud Advocacy Team",
-	"license": "MIT",
-	"devDependencies": {
-		"webpack": "^5.94.0",
-		"webpack-cli": "^5.1.4"
-	},
-	"dependencies": {
-		"axios": "^1.7.4"
-	}
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
 }

@@ -1,28 +1,31 @@
-# 建立瀏覽器擴充功能
+# 建立一款太空遊戲
 
-建立瀏覽器擴充功能是個好玩且有趣的方式來思考應用程式的執行效能，包含各式各樣類型的網頁資產。這堂學習模組介紹了瀏覽器運作方式、如何架設擴充功能、建立表單、呼叫 API、使用 Local Storage 和測量網頁效能的方法並增進它。
+一款太空遊戲能教會你更多 JavaScript 的進階概念
 
-你會建立一個支援在 Edge、Chrome 與 Firefox 的瀏覽器擴充功能。這個擴充功能就像小型的網頁，專門滿足特定課題：利用[C02 Signal API](https://www.co2signal.com)檢查地區的電力使用與碳排濃度，回傳地區的碳足跡。
+這系列課程中，你會學習如何建立屬於自己的太空遊戲。如果你遊玩過遊戲「太空侵略者」，這款遊戲有相同的套路：操控太空船並擊落由上接近的怪物。這是遊戲完成後的模樣：
 
-這款特設擴充功能允許使用者在輸入完 API Key 與國家地區代碼到表單後，取得當地電力使用量與其他資訊，決定使用者後續的行為。舉例來說，在地區高電力用量時，你可能會延後烘衣機的使用(增加碳排)。
+![遊戲成品](../images/pewpew.gif)
 
-### 主題
+這六堂課程中，你會學習：
 
-1. [關於瀏覽器](../1-about-browsers/translations/README.zh-tw.md)
-2. [表單與 Local Storage](../2-forms-browsers-local-storage/translations/README.zh-tw.md)
-3. [背景工作與效能](../3-background-tasks-and-performance/translations/README.zh-tw.md)
+- **使用** Canvas 元素來在畫面上繪製物件
+- **了解**笛卡爾座標系
+- **學習**發布與訂閱設計模式，建立容易維護及擴增的遊戲結構
+- **利用** Async/Await 來讀取遊戲資源
+- **處理**鍵盤事件
 
-### 成就
+## 總覽
 
-![綠能瀏覽器擴充功能](../extension-screenshot.png)
+- 理論
+   - [利用 JavaScript 設計遊戲](../1-introduction/translations/README.zh-tw.md)
+- 實作
+   - [在畫布上繪製](../2-drawing-to-canvas/translations/README.zh-tw.md)
+   - [移動畫面上之物件](../3-moving-elements-around/translations/README.zh-tw.md)
+   - [碰撞偵測](../4-collision-detection/translations/README.zh-tw.md)
+   - [持續得分](../5-keeping-score/translations/README.zh-tw.md)
+   - [結束與重新遊戲](../6-end-condition/translations/README.zh-tw.md)
 
 ## 參與人員
 
-網頁碳排放追蹤的發想出自於 Asim Hussain，微軟綠能雲端倡導小組的領導人與[Green Principles](https://principles.green/)的作者。這源自於一個[網頁專案](https://github.com/jlooper/green)。
-
-擴充功能的結構受[Adebola Adeniran 的 COVID 擴充功能](https://github.com/onedebos/covtension)啟發。
-
-「點」圖示系統的概念參考[Energy Lollipop](https://energylollipop.com/)的加州排放擴充功能。
-
-這些課程由 [Jen Looper](https://www.twitter.com/jenlooper) 用滿滿的 ♥️ 來編寫。
-
+遊戲資源皆來自於 https://www.kenney.nl/。 
+如果你熱愛設計遊戲，這邊有許多實用的資源，許多資源是免費的，有些則是付費內容。

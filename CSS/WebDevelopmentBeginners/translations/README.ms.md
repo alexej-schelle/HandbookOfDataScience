@@ -1,27 +1,31 @@
-# Membina pelanjutan penyemak imbas
+# Bina Permainan Angkasa
 
-Membina pelanjutan penyemak imbas adalah cara yang menyeronokkan dan menarik untuk memikirkan prestasi aplikasi anda sambil membina pelbagai jenis aset web. Modul ini merangkumi pelajaran tentang cara penyemak imbas berfungsi dan cara menyebarkan pelanjutan penyemak imbas, cara membuat borang, memanggil API, dan menggunakan storan tempatan, dan bagaimana mengukur prestasi laman web anda dan memperbaikinya.
+Permainan ruang untuk mengajar asas-asas JavaScript yang lebih mendalam
 
-Anda akan membina pelanjutan penyemak imbas yang berfungsi di Edge, Chrome, dan Firefox. Sambungan ini, seperti laman web mini yang disesuaikan dengan tugas yang sangat spesifik, memeriksa [C02 Signal API](https://www.co2signal.com) untuk mengetahui penggunaan elektrik dan intensiti karbon wilayah tertentu, dan mengembalikan membaca mengenai jejak karbon di rantau ini.
+Dalam pelajaran ini, anda akan belajar bagaimana membuat permainan ruang angkasa anda sendiri. Sekiranya anda pernah memainkan permainan "Space Invaders", permainan ini mempunyai idea yang sama: untuk mengarahkan kapal angkasa dan menembak monster yang turun dari atas. Beginilah rupa permainan yang sudah siap:
 
-Sambungan ini dapat disebut ad hoc oleh pengguna setelah kunci API dan kod wilayah dimasukkan ke dalam bentuk untuk menentukan penggunaan elektrik tempatan dan dengan itu menawarkan data yang dapat mempengaruhi keputusan elektrik pengguna. Sebagai contoh, lebih baik menangguhkan penggunaan pengering pakaian (aktiviti sengit karbon) dalam tempoh penggunaan elektrik yang tinggi di wilayah anda.
+![Permainan selesai](../images/pewpew.gif)
 
-### Topik
+Dalam enam pelajaran ini anda akan mempelajari perkara berikut:
 
-1. [Mengenai penyemak imbas](1-about-browsers/README.md)
-2. [Borang dan simpanan tempatan](2-forms-browsers-local-storage/README.md)
-3. [Latar belakang tugas dan prestasi](3-background-tasks-and-performance/README.md)
+- **Berinteraksi** dengan elemen Canvas untuk menarik sesuatu di skrin
+- **Memahami** sistem koordinat kartesian
+- **Pelajari** corak Pub-Sub untuk membuat seni bina permainan suara yang lebih mudah dijaga dan diperluas
+- **Leverage** Async / Tunggu untuk memuatkan sumber permainan
+- **Mengendalikan** acara papan kekunci
 
-### Kredit
+## Gambaran keseluruhan
 
-![pelanjutan penyemak imbas hijau](extension-screenshot.png)
+- Theori
+   - [Pengenalan membina permainan dengan JavaScript](../1-introduction/README.md)
+- Practice
+   - [Melukis ke kanvas](../2-drawing-to-canvas/README.md)
+   - [Menggerakkan elemen di sekitar skrin](../3-moving-elements-around/README.md)
+   - [Pengesanan perlanggaran](../4-collision-detection/README.md)
+   - [Menjaga skor](../5-keeping-score/README.md)
+   - [Menamatkan dan memulakan semula permainan](../6-end-condition/README.md)
 
 ## Kredit
 
-Idea untuk pencetus karbon web ini ditawarkan oleh Asim Hussain, ketua pasukan Microsoft dari Green Cloud Advocacy dan pengarang [Prinsip Hijau](https://principles.green/). Pada mulanya ia adalah [projek laman web](https://github.com/jlooper/green).
-
-Struktur pelanjutan penyemak imbas dipengaruhi oleh [peluasan COVID Adebola Adeniran](https://github.com/onedebos/covtension).
-
-Konsep di sebalik sistem ikon 'dot' dicadangkan oleh struktur ikon pelanjutan penyemak imbas [Energy Lollipop](https://energylollipop.com/) untuk pelepasan California.
-
-Pelajaran ini ditulis dengan ♥ ️ oleh [Jen Looper](https://www.twitter.com/jenlooper)
+Aset yang digunakan untuk ini berasal dari https://www.kenney.nl/.
+Sekiranya anda suka membina permainan, ini adalah beberapa aset yang sangat baik, banyak percuma dan ada juga yang dibayar.
