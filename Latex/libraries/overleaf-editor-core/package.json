@@ -1,0 +1,34 @@
+{
+  "name": "overleaf-editor-core",
+  "version": "1.0.0",
+  "description": "Library shared between the editor server and clients.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && npm run format && npm run types:check && npm run test:unit",
+    "format": "prettier --list-different $PWD/'**/*.{js,cjs,ts}'",
+    "format:fix": "prettier --write $PWD/'**/*.{js,cjs,ts}'",
+    "lint": "eslint --ext .js --ext .cjs --ext .ts --max-warnings 0 --format unix .",
+    "lint:fix": "eslint --fix --ext .js --ext .cjs --ext .ts .",
+    "test:ci": "npm run test:unit",
+    "test:unit": "mocha --exit test/**/*.{js,cjs}",
+    "types:check": "tsc --noEmit"
+  },
+  "author": "team@overleaf.com",
+  "license": "Proprietary",
+  "private": true,
+  "devDependencies": {
+    "@types/check-types": "^7.3.7",
+    "@types/path-browserify": "^1.0.2",
+    "chai": "^3.3.0",
+    "mocha": "^10.2.0",
+    "sinon": "^9.2.4",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@overleaf/o-error": "*",
+    "check-types": "^5.1.0",
+    "lodash": "^4.17.19",
+    "p-map": "^4.0.0",
+    "path-browserify": "^1.0.1"
+  }
+}
