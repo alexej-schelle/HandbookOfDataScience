@@ -1,0 +1,24 @@
+{
+  "name": "@overleaf/stream-utils",
+  "version": "0.1.0",
+  "description": "stream handling utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && npm run format && npm run types:check && npm run test:unit",
+    "test:unit": "mocha --exit test/**/*.{js,cjs}",
+    "lint": "eslint --ext .js --ext .cjs --ext .ts --max-warnings 0 --format unix .",
+    "lint:fix": "eslint --fix --ext .js --ext .cjs --ext .ts .",
+    "format": "prettier --list-different $PWD/'**/*.{js,cjs,ts}'",
+    "format:fix": "prettier --write $PWD/'**/*.{js,cjs,ts}'",
+    "test:ci": "npm run test:unit",
+    "types:check": "tsc --noEmit"
+  },
+  "author": "Overleaf (https://www.overleaf.com)",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.4"
+  }
+}
