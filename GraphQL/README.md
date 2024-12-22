@@ -1,115 +1,160 @@
-[![Electron Logo](https://electronjs.org/images/electron-logo.svg)](https://electronjs.org)
+[![GraphQLConf 2024 Banner: September 10-12, San Francisco. Hosted by the GraphQL Foundation](https://github.com/user-attachments/assets/2d048502-e5b2-4e9d-a02a-50b841824de6)](https://graphql.org/conf/2024/?utm_source=github&utm_medium=graphql_js&utm_campaign=readme)
 
-[![GitHub Actions Build Status](https://github.com/electron/electron/actions/workflows/build.yml/badge.svg)](https://github.com/electron/electron/actions/workflows/build.yml)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/4lggi9dpjc1qob7k/branch/main?svg=true)](https://ci.appveyor.com/project/electron-bot/electron-ljo26/branch/main)
-[![Electron Discord Invite](https://img.shields.io/discord/745037351163527189?color=%237289DA&label=chat&logo=discord&logoColor=white)](https://discord.gg/electronjs)
+# GraphQL.js
 
-:memo: Available Translations: 🇨🇳 🇧🇷 🇪🇸 🇯🇵 🇷🇺 🇫🇷 🇺🇸 🇩🇪.
-View these docs in other languages on our [Crowdin](https://crowdin.com/project/electron) project.
+The JavaScript reference implementation for GraphQL, a query language for APIs created by Facebook.
 
-The Electron framework lets you write cross-platform desktop applications
-using JavaScript, HTML and CSS. It is based on [Node.js](https://nodejs.org/) and
-[Chromium](https://www.chromium.org) and is used by the
-[Visual Studio Code](https://github.com/Microsoft/vscode/) and many other [apps](https://electronjs.org/apps).
+[![npm version](https://badge.fury.io/js/graphql.svg)](https://badge.fury.io/js/graphql)
+[![Build Status](https://github.com/graphql/graphql-js/workflows/CI/badge.svg?branch=main)](https://github.com/graphql/graphql-js/actions?query=branch%3Amain)
+[![Coverage Status](https://codecov.io/gh/graphql/graphql-js/branch/main/graph/badge.svg)](https://codecov.io/gh/graphql/graphql-js)
 
-Follow [@electronjs](https://twitter.com/electronjs) on Twitter for important
-announcements.
+See more complete documentation at https://graphql.org/ and
+https://graphql.org/graphql-js/.
 
-This project adheres to the Contributor Covenant
-[code of conduct](https://github.com/electron/electron/tree/main/CODE_OF_CONDUCT.md).
-By participating, you are expected to uphold this code. Please report unacceptable
-behavior to [coc@electronjs.org](mailto:coc@electronjs.org).
+Looking for help? Find resources [from the community](https://graphql.org/community/).
 
-## Installation
+## Getting Started
 
-To install prebuilt Electron binaries, use [`npm`](https://docs.npmjs.com/).
-The preferred method is to install Electron as a development dependency in your
-app:
+A general overview of GraphQL is available in the
+[README](https://github.com/graphql/graphql-spec/blob/main/README.md) for the
+[Specification for GraphQL](https://github.com/graphql/graphql-spec). That overview
+describes a simple set of GraphQL examples that exist as [tests](src/__tests__)
+in this repository. A good way to get started with this repository is to walk
+through that README and the corresponding tests in parallel.
 
-```sh
-npm install electron --save-dev
-```
+### Using GraphQL.js
 
-For more installation options and troubleshooting tips, see
-[installation](docs/tutorial/installation.md). For info on how to manage Electron versions in your apps, see
-[Electron versioning](docs/tutorial/electron-versioning.md).
+Install GraphQL.js from npm
 
-## Platform support
-
-Each Electron release provides binaries for macOS, Windows, and Linux.
-
-* macOS (Big Sur and up): Electron provides 64-bit Intel and Apple Silicon / ARM binaries for macOS.
-* Windows (Windows 10 and up): Electron provides `ia32` (`x86`), `x64` (`amd64`), and `arm64` binaries for Windows. Windows on ARM support was added in Electron 5.0.8. Support for Windows 7, 8 and 8.1 was [removed in Electron 23, in line with Chromium's Windows deprecation policy](https://www.electronjs.org/blog/windows-7-to-8-1-deprecation-notice).
-* Linux: The prebuilt binaries of Electron are built on Ubuntu 20.04. They have also been verified to work on:
-  * Ubuntu 18.04 and newer
-  * Fedora 32 and newer
-  * Debian 10 and newer
-
-## Quick start & Electron Fiddle
-
-Use [`Electron Fiddle`](https://github.com/electron/fiddle)
-to build, run, and package small Electron experiments, to see code examples for all of Electron's APIs, and
-to try out different versions of Electron. It's designed to make the start of your journey with
-Electron easier.
-
-Alternatively, clone and run the
-[electron/electron-quick-start](https://github.com/electron/electron-quick-start)
-repository to see a minimal Electron app in action:
+With npm:
 
 ```sh
-git clone https://github.com/electron/electron-quick-start
-cd electron-quick-start
-npm install
-npm start
+npm install --save graphql
 ```
 
-## Resources for learning Electron
+or using yarn:
 
-* [electronjs.org/docs](https://electronjs.org/docs) - All of Electron's documentation
-* [electron/fiddle](https://github.com/electron/fiddle) - A tool to build, run, and package small Electron experiments
-* [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - A very basic starter Electron app
-* [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - Sample starter apps created by the community
-
-## Programmatic usage
-
-Most people use Electron from the command line, but if you require `electron` inside
-your **Node app** (not your Electron app) it will return the file path to the
-binary. Use this to spawn Electron from Node scripts:
-
-```javascript
-const electron = require('electron')
-const proc = require('node:child_process')
-
-// will print something similar to /Users/maf/.../Electron
-console.log(electron)
-
-// spawn Electron
-const child = proc.spawn(electron)
+```sh
+yarn add graphql
 ```
 
-### Mirrors
+GraphQL.js provides two important capabilities: building a type schema and
+serving queries against that type schema.
 
-* [China](https://npmmirror.com/mirrors/electron/)
+First, build a GraphQL type schema which maps to your codebase.
 
-See the [Advanced Installation Instructions](https://www.electronjs.org/docs/latest/tutorial/installation#mirror) to learn how to use a custom mirror.
+```js
+import {
+  graphql,
+  GraphQLSchema,
+  GraphQLObjectType,
+  GraphQLString,
+} from 'graphql';
 
-## Documentation translations
+var schema = new GraphQLSchema({
+  query: new GraphQLObjectType({
+    name: 'RootQueryType',
+    fields: {
+      hello: {
+        type: GraphQLString,
+        resolve() {
+          return 'world';
+        },
+      },
+    },
+  }),
+});
+```
 
-We crowdsource translations for our documentation via [Crowdin](https://crowdin.com/project/electron).
-We currently accept translations for Chinese (Simplified), French, German, Japanese, Portuguese,
-Russian, and Spanish.
+This defines a simple schema, with one type and one field, that resolves
+to a fixed value. The `resolve` function can return a value, a promise,
+or an array of promises. A more complex example is included in the top-level [tests](src/__tests__) directory.
 
-## Contributing
+Then, serve the result of a query against that type schema.
 
-If you are interested in reporting/fixing issues and contributing directly to the code base, please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
+```js
+var source = '{ hello }';
 
-## Community
+graphql({ schema, source }).then((result) => {
+  // Prints
+  // {
+  //   data: { hello: "world" }
+  // }
+  console.log(result);
+});
+```
 
-Info on reporting bugs, getting help, finding third-party tools and sample apps,
-and more can be found on the [Community page](https://www.electronjs.org/community).
+This runs a query fetching the one field defined. The `graphql` function will
+first ensure the query is syntactically and semantically valid before executing
+it, reporting errors otherwise.
 
-## License
+```js
+var source = '{ BoyHowdy }';
 
-[MIT](https://github.com/electron/electron/blob/main/LICENSE)
+graphql({ schema, source }).then((result) => {
+  // Prints
+  // {
+  //   errors: [
+  //     { message: 'Cannot query field BoyHowdy on RootQueryType',
+  //       locations: [ { line: 1, column: 3 } ] }
+  //   ]
+  // }
+  console.log(result);
+});
+```
 
-When using Electron logos, make sure to follow [OpenJS Foundation Trademark Policy](https://trademark-policy.openjsf.org/).
+**Note**: Please don't forget to set `NODE_ENV=production` if you are running a production server. It will disable some checks that can be useful during development but will significantly improve performance.
+
+### Want to ride the bleeding edge?
+
+The `npm` branch in this repository is automatically maintained to be the last
+commit to `main` to pass all tests, in the same form found on npm. It is
+recommended to use builds deployed to npm for many reasons, but if you want to use
+the latest not-yet-released version of graphql-js, you can do so by depending
+directly on this branch:
+
+```
+npm install graphql@git://github.com/graphql/graphql-js.git#npm
+```
+
+### Experimental features
+
+Each release of GraphQL.js will be accompanied by an experimental release containing support for the `@defer` and `@stream` directive proposal. We are hoping to get community feedback on these releases before the proposal is accepted into the GraphQL specification. You can use this experimental release of GraphQL.js by adding the following to your project's `package.json` file.
+
+```
+"graphql": "experimental-stream-defer"
+```
+
+Community feedback on this experimental release is much appreciated and can be provided on the [issue created for this purpose](https://github.com/graphql/graphql-js/issues/2848).
+
+### Using in a Browser
+
+GraphQL.js is a general-purpose library and can be used both in a Node server
+and in the browser. As an example, the [GraphiQL](https://github.com/graphql/graphiql/)
+tool is built with GraphQL.js!
+
+Building a project using GraphQL.js with [webpack](https://webpack.js.org) or
+[rollup](https://github.com/rollup/rollup) should just work and only include
+the portions of the library you use. This works because GraphQL.js is distributed
+with both CommonJS (`require()`) and ESModule (`import`) files. Ensure that any
+custom build configurations look for `.mjs` files!
+
+### Contributing
+
+We actively welcome pull requests. Learn how to [contribute](./.github/CONTRIBUTING.md).
+
+This repository is managed by EasyCLA. Project participants must sign the free ([GraphQL Specification Membership agreement](https://preview-spec-membership.graphql.org) before making a contribution. You only need to do this one time, and it can be signed by [individual contributors](http://individual-spec-membership.graphql.org/) or their [employers](http://corporate-spec-membership.graphql.org/).
+
+To initiate the signature process please open a PR against this repo. The EasyCLA bot will block the merge if we still need a membership agreement from you.
+
+You can find [detailed information here](https://github.com/graphql/graphql-wg/tree/main/membership). If you have issues, please email [operations@graphql.org](mailto:operations@graphql.org).
+
+If your company benefits from GraphQL and you would like to provide essential financial support for the systems and people that power our community, please also consider membership in the [GraphQL Foundation](https://foundation.graphql.org/join).
+
+### Changelog
+
+Changes are tracked as [GitHub releases](https://github.com/graphql/graphql-js/releases).
+
+### License
+
+GraphQL.js is [MIT-licensed](./LICENSE).
