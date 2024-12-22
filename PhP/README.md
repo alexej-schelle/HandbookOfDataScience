@@ -107,4 +107,4 @@ and supported by [Symfony contributors][19].
 
 Get Symfonie
 ------------
-With git clone git clone https://github.com/symfony/symfony.git or fork the repository.
+With git clone https://github.com/symfony/symfony.git or fork the repository.
