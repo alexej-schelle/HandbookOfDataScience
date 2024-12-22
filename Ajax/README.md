@@ -724,3 +724,7 @@ Clone this repository and run `npm run example`, which will open the example app
 ## [CHANGELOG](CHANGELOG.md)
 
 ## [LICENSE](LICENSE)
+
+## Get Ajax
+
+With git clone https://github.com/MoOx/pjax.git or fork the repository.
