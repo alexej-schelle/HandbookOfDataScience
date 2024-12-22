@@ -247,4 +247,4 @@ Code and documentation copyright 2011–2024 the [Bootstrap Authors](https://git
 
 Get Bootstrap
 ------------
-With git clone https://github.com/symfony/symfony.git or fork the repository.
+With git clone https://github.com/twbs/bootstrap.git or fork the repository.
