@@ -104,3 +104,7 @@ and supported by [Symfony contributors][19].
 [29]: https://getrector.com
 [30]: https://jolicode.com
 [31]: https://les-tilleuls.coop
+
+Get Symfonie
+------------
+With git clone git clone https://github.com/symfony/symfony.git or fork the repository.
