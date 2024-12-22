@@ -50,3 +50,7 @@ For more information refer to `man pkgbuild` which explains that *`--scripts scr
 ## License
 
 brew-pkg is [MIT-licensed](https://github.com/timsutton/brew-pkg/blob/master/LICENSE.md).
+
+## Get Brew PKG
+
+With git clone https://github.com/timsutton/brew-pkg.git or fork the repository.
