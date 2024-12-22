@@ -103,3 +103,7 @@ This example will print:
 
 PyMySQL is released under the MIT License. See LICENSE for more
 information.
+
+## Get PyMySQL
+
+With git clone https://github.com/PyMySQL/PyMySQL.git or fork the repository.
