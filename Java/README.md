@@ -18,3 +18,7 @@ Please read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute
 
 ## Algorithms
 Our [directory](DIRECTORY.md) has the full list of applications.
+
+## Get The Algorithms - Java
+
+With git clone https://github.com/TheAlgorithms/Java.git or fork the repository.
