@@ -1,0 +1,70 @@
+.. _laravel-find-one-usage:
+
+===============
+Find a Document
+===============
+
+.. facet::
+   :name: genre
+   :values: reference
+
+.. meta::
+   :keywords: find one, retrieve, code example, first
+
+.. include:: /includes/usage-examples/operation-description.rst
+
+   .. replacement:: operator-description
+
+      You can retrieve a single document from a collection
+
+   .. replacement:: result-operation
+
+      the ``first()`` method to return one document.
+
+If multiple documents match the query filter, ``first()`` returns the first matching document according to the documents'
+:term:`natural order` in the database or according to the sort order that you can specify
+by using the ``orderBy()`` method.
+
+Example
+-------
+
+This usage example performs the following actions:
+
+- Uses the ``Movie`` Eloquent model to represent the ``movies`` collection in the
+  ``sample_mflix`` database
+- Retrieves a document from the ``movies`` collection that matches a query filter
+- Prints the retrieved document
+
+The example calls the following methods on the ``Movie`` model:
+
+- ``where()``: matches documents in which the value of the ``directors`` field includes ``"Rob Reiner"``.
+- ``orderBy()``: sorts matched documents by their ascending ``_id`` values.
+- ``first()``: retrieves only the first matching document.
+
+.. io-code-block::
+
+   .. input:: ../includes/usage-examples/FindOneTest.php
+      :start-after: begin-find-one
+      :end-before: end-find-one
+      :language: php
+      :dedent:
+
+   .. output::
+      :language: console
+      :visible: false
+
+      // Result is truncated
+
+      {
+        "_id": ...,
+        "title": "This Is Spinal Tap",
+        "directors": [ "Rob Reiner" ],
+         ...
+      }
+
+.. include:: /includes/usage-examples/fact-edit-laravel-app.rst
+
+.. tip::
+
+   To learn more about retrieving documents with the {+odm-short+}, see the
+   :ref:`laravel-fundamentals-retrieve` guide.
