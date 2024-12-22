@@ -1,3 +1,0 @@
-# Basic graphql request
-exec gh api graphql -f query='query { viewer { login } }'
-stdout '"login":'

@@ -1,3 +1,0 @@
-# Basic REST request
-exec gh api /user
-stdout '"login":'
