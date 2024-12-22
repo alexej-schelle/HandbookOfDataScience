@@ -1,6 +1,0 @@
-#!/bin/sh
-set -e
-
-echo "Checking texlive images"
-cd /overleaf/services/web
-node modules/server-ce-scripts/scripts/check-texlive-images

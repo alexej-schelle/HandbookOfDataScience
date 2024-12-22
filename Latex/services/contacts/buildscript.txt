@@ -1,9 +1,0 @@
-contacts
---dependencies=mongo
---docker-repos=us-east1-docker.pkg.dev/overleaf-ops/ol-docker
---env-add=
---env-pass-through=
---esmock-loader=True
---node-version=20.18.0
---public-repo=False
---script-version=4.5.0
