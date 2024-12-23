@@ -152,3 +152,7 @@ Our team produces other curricula! Check out:
 - [Machine Learning for Beginners](https://aka.ms/ml4beginners)
 - [XR Development for Beginners](https://aka.ms/xr-dev-for-beginners)
 - [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI)
+
+## Get SciKitLEarn
+
+With git clone https://github.com/microsoft/ML-For-Beginners.git or fork the repository.
