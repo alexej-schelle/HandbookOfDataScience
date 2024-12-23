@@ -139,3 +139,7 @@ And of course, we'd like to thank the authors of all upstream dependencies.  Ple
 Copyright (c) Microsoft Corporation. All rights reserved.
 
 Licensed under the [MIT License](LICENSE.txt).
+
+## Get Azure Data Studion
+
+With git clone https://github.com/microsoft/azuredatastudio.git or fork the repository.
