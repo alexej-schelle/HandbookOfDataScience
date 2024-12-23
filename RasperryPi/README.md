@@ -20,3 +20,6 @@ This repository contains the source and tools used to build the [Raspberry Pi Do
 ## Licence
 
 The Raspberry Pi documentation is [licensed](https://github.com/raspberrypi/documentation/blob/develop/LICENSE.md) under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA). Documentation tools (everything outside of the `documentation/` subdirectory) are licensed under the [BSD 3-Clause](https://opensource.org/licenses/BSD-3-Clause) licence.
+
+## Get Rasperry Pi
+With git clone https://github.com/raspberrypi/documentation.git or fork the repository.
