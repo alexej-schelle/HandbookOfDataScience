@@ -4,13 +4,13 @@ The Handbook of Data Science is an electronic handbook that reports ideas, news,
 
 It is divided into Algorithms, Data Structures and ML, and Programming Languages and Software, for which open-source software is provided here.
 
-Information for readers:
+# Information for readers:
 
 Peer review and editorial services at The Electronic Handbook of Data Science are completely free of charge for readers.
 
 Interested companies and readers are acknowledged to follow the handbook’s main page officially and read the human-written lead articles with the appended follower and clapping buttons.
 
-Information for contributors:
+# Information for contributors:
 
 Contributors who are interested in publishing stories of their daily business or development of an own NLP model may send their ideas for peer review to ejp@krealix.de.
 
