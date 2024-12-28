@@ -18,33 +18,33 @@ Articles for contributors will be created by specific and generic AI models.
 
 Peer review before acceptance or rejection is typically carried out within two to four weeks after submission.
 
-Ajax
-Bootstrap
-CSS
-DataStructures
-DeepLearning
-Emacs
-GIT
-GraphQL
-HTML
-Homebrew
-JSON
-Java
-Laravel
-Linux
-Matlab
-MongoDB
-MySQL
-Ollama
-PhP
-PostGreSQL
-Python
-R
-RasperryPi
-SQL
-SciKitLearn
-Symfonie
-TensorFlow
-Terminal
+# Ajax
+# Bootstrap
+# CSS
+# DataStructures
+# DeepLearning
+# Emacs
+# GIT
+# GraphQL
+# HTML
+# Homebrew
+# JSON
+# Java
+# Laravel
+# Linux
+# Matlab
+# MongoDB
+# MySQL
+# Ollama
+# PhP
+# PostGreSQL
+# Python
+# R
+# RasperryPi
+# SQL
+# SciKitLearn
+# Symfonie
+# TensorFlow
+# Terminal
 
 
