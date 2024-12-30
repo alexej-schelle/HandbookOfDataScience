@@ -38,7 +38,7 @@ Implementations are for learning purposes only. They may be less efficient than 
 
 ## Getting Started
 
-Read through our [<a href="https://github.com/TheAlgorithms/Python/blob/master/"> Contribution Guidelines</a> (CONTRIBUTING.md) before you contribute.
+Read through our [<a href="https://github.com/TheAlgorithms/Python/blob/master/CONTRIBUTING.md"> Contribution Guidelines</a> (CONTRIBUTING.md) before you contribute.
 
 ## Community Channels
 
@@ -46,4 +46,4 @@ We are on [Discord](https://the-algorithms.com/discord) and [Gitter](https://git
 
 ## List of Algorithms
 
-See our [directory](DIRECTORY.md) for easier navigation and a better overview of the project.
+See our directory for easier navigation and a better overview of the project.
