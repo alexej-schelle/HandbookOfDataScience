@@ -109,5 +109,5 @@ TensorFlow is an open-source machine learning library developed by Google, widel
 ### Terminal
 The terminal is not a programming language but a command-line interface (CLI) used to interact with an operating system. It allows users to execute commands, run scripts, and navigate the file system without a graphical user interface (GUI). Commonly used in Unix-based systems like Linux and macOS, the terminal provides a powerful environment for developers, system administrators, and advanced users to perform tasks such as file manipulation, software installation, and system management efficiently.
 
-<i> Companies and readers that are interested in supporting specific NLP models and The Electroni Journal of Data Science are acknowledged to send a tip per PayPal to ejp@krealix.de. </i>
+<i> Companies and readers that are interested in supporting specific NLP models and The Electronic Journal of Data Science are acknowledged to send a tip per PayPal to ejp@krealix.de. </i>
 
