@@ -12,7 +12,7 @@ Interested companies and readers are acknowledged to follow the handbook’s mai
 
 ### Information for contributors:
 
-Contributors who are interested in publishing stories of their daily business or development of an own NLP model may send their ideas for peer review to ejp@krealix.de.
+Contributors who are interested in publishing stories of their daily business or in the development of an own NLP model may send their ideas for peer review to ejp@krealix.de.
 
 Articles for contributors will be created by specific and generic AI models.
 
