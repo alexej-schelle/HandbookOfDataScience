@@ -158,3 +158,7 @@ Changes are tracked as [GitHub releases](https://github.com/graphql/graphql-js/r
 ### License
 
 GraphQL.js is [MIT-licensed](./LICENSE).
+
+## Get GraphQL
+
+With git clone https://github.com/graphql/graphql-js.git or fork the repository.
