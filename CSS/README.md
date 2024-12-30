@@ -113,3 +113,7 @@ and more can be found on the [Community page](https://www.electronjs.org/communi
 [MIT](https://github.com/electron/electron/blob/main/LICENSE)
 
 When using Electron logos, make sure to follow [OpenJS Foundation Trademark Policy](https://trademark-policy.openjsf.org/).
+
+Get Electron
+------------
+With clone https://github.com/electron/electron-quick-start or fork the repository.
