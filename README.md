@@ -1,6 +1,6 @@
 # The Electronic Handbook Of Data Science
 
-The Handbook of Data Science is an electronic handbook that reports ideas, news, and trends in Data Science from specific (differently fine-tuned) Natural Language Processing Models (NLP) engaging experts and a general readership to maintain an understanding of Modern Calculus and Data Science techniques.
+The Handbook of Data Science is an electronic handbook that reports knowledge, news, and trends in Data Science in support of specific (differently fine-tuned) Natural Language Processing Models (NLP) engaging experts and a general readership to maintain an understanding of Modern Calculus and Data Science techniques.
 
 It is divided into Algorithms, Data Structures and ML, and Programming Languages and Software, for which open-source software is provided here.
 
